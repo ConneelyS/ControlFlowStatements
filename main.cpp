@@ -9,15 +9,15 @@ int main() {
     const int max {100};
     int number {};
 
-    cout << "Please enter a number between 1 and 100";
+    cout << "Please enter a number between 1 and 100: ";
     cin >> number;
 
     if (number > max) {
-        cout << number << " is greater than " << max;
+        cout << number << " is greater than " << max << endl;
     }
 
     if (number < min) {
-        cout << number << " is less than " << min;
+        cout << number << " is less than " << min << endl;
     }
 
     if (number >= min && number <= max) {
@@ -34,11 +34,21 @@ int main() {
     cin >> licence;
 
     if (licence) {
-        cout << "You can drive";
+        cout << "You can drive" << endl;
     }
     else if (!licence) {
-        cout << "You do not have a licence";
+        cout << "You do not have a licence" << endl;
     }
+
+
+//    Conditional Operator
+//      (condition_expression) ? expression1 : expression2
+    int value {};
+
+    cout << "Please a number to test conditional operators: " << endl;
+    cin >> value;
+    cout << ((value >= 50) ? "Value greater than 50" : "Value less than 50");
+
 
     return 0;
 }
